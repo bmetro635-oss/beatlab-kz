@@ -1,0 +1,17 @@
+{
+  "name": "BEATLAB KZ — Битмейкер Академиясы",
+  "short_name": "BEATLAB KZ",
+  "description": "0-ден PRO битмейкерге дейінгі қазақша толық курс, FL Studio PRO гиді және интерактивті онлайн-студия.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090a0f",
+  "theme_color": "#090a0f",
+  "lang": "kk",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEATLAB KZ — 0-ден PRO Битмейкерге дейін | Интерактивті Академия</title>
+  <meta name="description" content="Жаңадан бастаған битмейкерлерге арналған толық қазақша курс, FL Studio PRO гиді және интерактивті онлайн-студия: ырғақ, драм-машина, аккордтар, аранжировка, сведение және мастеринг." />
+  <meta name="theme-color" content="#090a0f" />
+  <meta property="og:title" content="BEATLAB KZ — 0-ден PRO Битмейкерге дейін" />
+  <meta property="og:description" content="Қазақша битмейкинг академиясы, FL Studio PRO гиді, 16-қадамды драм-машина және пианино зертханасы." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Sticky Top Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-eq" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span class="brand-text">BEATLAB<span class="brand-accent">.KZ</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Негізгі мәзір">
+        <a href="#fl-studio" class="nav-link nav-link-fl">🌶️ FL Studio</a>
+        <a href="#curriculum" class="nav-link">Курс</a>
+        <a href="#drum-studio" class="nav-link">Драм-машина</a>
+        <a href="#piano-lab" class="nav-link">Пианино</a>
+        <a href="#arrangement" class="nav-link">Аранжировка</a>
+        <a href="#mixing" class="nav-link">Миксинг &amp; EQ</a>
+        <a href="#roadmap" class="nav-link">30 күн</a>
+        <a href="#glossary" class="nav-link">Сөздік</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#curriculum" class="progress-pill" title="Оқу прогресіңіз">
+          <span class="progress-dot"></span>
+          <span id="headerProgressText">0 / 18 сабақ</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Мәзірді ашу" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          PRO БИТМЕЙКЕР МЕНТОРЫ • ҚАЗАҚША ТОЛЫҚ АКАДЕМИЯ
+        </div>
+        <h1 class="hero-title">
+          Ештеңе білмесең де,<br />
+          <span class="gradient-text">0-ден PRO битмейкер</span> бол.
+        </h1>
+        <p class="hero-subtitle">
+          Қош келдің, жас продюсер! Бұл сайтта бит жасаудың бүкіл жолы — DAW таңдаудан бастап,
+          808 басын тюнинг жасау, мелодия құру, тректі жинау, сведение мен сатуға дейін —
+          қарапайым тілмен әрі <strong>нақты интерактивті тренажерлермен</strong> жиналған.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#fl-studio" class="btn btn-primary">
+            <span>🌶️ FL Studio PRO Гид</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#drum-studio" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            <span>Дәл қазір бит жасап көр</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">6 модуль</span>
+            <span class="stat-label">18 тереңдетілген сабақ</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">4 құрал</span>
+            <span class="stat-label">Онлайн Драм, Пианино, EQ, Timeline</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">30 күн</span>
+            <span class="stat-label">Қадамдық тәжірибе жоспары</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mentor Welcome Studio Card -->
+      <div class="hero-studio-card">
+        <div class="studio-card-header">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <span class="mono-label">MENTOR_BRIEFING.SESSION</span>
+          <span class="bpm-badge">140 BPM</span>
+        </div>
+        <div class="studio-card-body">
+          <div class="mentor-note-title">Ментордан 4 алтын ереже:</div>
+          <ul class="mentor-rules">
+            <li>
+              <span class="rule-num">01</span>
+              <div>
+                <strong>Қымбат жабдық күтпе.</strong>
+                <span>Ноутбук пен қарапайым құлаққап жеткілікті. Хит биттер тінтуірмен-ақ жасалады.</span>
+              </div>
+            </li>
+            <li>
+              <span class="rule-num">02</span>
+              <div>
+                <strong>Құлақ — басты құралың.</strong>
+                <span>Сүйікті тректеріңді енді тыңдарман емес, продюсер ретінде тыңда: Kick қайда, Snare қайда?</span>
+              </div>
+            </li>
+            <li>
+              <span class="rule-num">03</span>
+              <div>
+                <strong>Алғашқы 50 битің идеал болмайды.</strong>
+                <span>Бұл қалыпты! Күніне 30 минут жаттықсаң, 1 айда нәтиже өзіңді таңғалдырады.</span>
+              </div>
+            </li>
+            <li>
+              <span class="rule-num">04</span>
+              <div>
+                <strong>Оқы да, бірден бас!</strong>
+                <span>Төмендегі Драм-машина мен Пианинода әр сабақты дәл осы сайтта байқап көр.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="quick-jump-row">
+            <button class="chip-btn" data-jump-preset="trap">🔥 Trap 140 тыңдау</button>
+            <button class="chip-btn" data-jump-preset="boombap">📼 Boom Bap 90</button>
+            <button class="chip-btn" data-jump-preset="drill">⚡ Drill 142</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dedicated FL Studio PRO Guide Section -->
+  <section class="section section-fl" id="fl-studio">
+    <div class="container">
+      <div class="fl-header-row">
+        <div class="section-header" style="margin-bottom:0;">
+          <span class="section-kicker">🌶️ АРНАЙЫ БӨЛІМ • FL STUDIO PRO ГИД</span>
+          <h2 class="section-title">FL Studio-да 0-ден алғашқы хит битке дейін</h2>
+          <p class="section-desc">
+            FL Studio — Trap, Drill, Hip-Hop және Q-Pop битмейкерлерінің №1 бағдарламасы.
+            Төмендегі <strong>10 қадамдық чек-листті</strong> FL Studio ашып қойып бірге орындап шық,
+            встроенный плагиндер мен жылдам пернелерді (Hotkeys) бірден меңгер!
+          </p>
+        </div>
+
+        <!-- macOS / Windows Hotkey Switcher -->
+        <div class="fl-os-box">
+          <span class="mono-label">ЖҮЙЕҢДІ ТАҢДА (HOTKEYS):</span>
+          <div class="os-toggle" id="flOsToggle" role="group" aria-label="Операциялық жүйені таңдау">
+            <button type="button" class="os-btn active" data-os="mac"> macOS (⌘)</button>
+            <button type="button" class="os-btn" data-os="win">⊞ Windows (Ctrl)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 FL Studio Sub-Tabs -->
+      <div class="fl-tabs-bar" id="flGuideTabs" role="tablist">
+        <button type="button" class="fl-tab-btn active" data-fl-tab="flPanelSteps">
+          <span>🚀 10 қадамдық Cook-Up</span>
+          <span class="fl-tab-pill" id="flStepsProgress">0 / 10 қадам</span>
+        </button>
+        <button type="button" class="fl-tab-btn" data-fl-tab="flPanelPlugins">
+          <span>🎛️ Stock Плагиндер (Тегін)</span>
+        </button>
+        <button type="button" class="fl-tab-btn" data-fl-tab="flPanelHotkeys">
+          <span>⌨️ Жылдам Пернелер (28)</span>
+        </button>
+        <button type="button" class="fl-tab-btn" data-fl-tab="flPanelTricks">
+          <span>⚡ 6 PRO Құпия Трюк</span>
+        </button>
+      </div>
+
+      <!-- Panel 1: 10-Step Cook-Up Checklist -->
+      <div class="fl-tab-panel" id="flPanelSteps">
+        <div class="fl-steps-grid" id="flStepsContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Panel 2: Built-in Stock Plugins -->
+      <div class="fl-tab-panel hidden" id="flPanelPlugins">
+        <div class="fl-filter-row" id="flPluginFilters">
+          <button type="button" class="filter-pill active" data-pcat="all">Барлығы (9)</button>
+          <button type="button" class="filter-pill" data-pcat="instrument">Аспаптар &amp; Сэмплинг</button>
+          <button type="button" class="filter-pill" data-pcat="mixing">Миксинг</button>
+          <button type="button" class="filter-pill" data-pcat="creative">Креатив &amp; 808 FX</button>
+          <button type="button" class="filter-pill" data-pcat="master">Мастеринг</button>
+          <button type="button" class="filter-pill" data-pcat="tool">Құралдар</button>
+        </div>
+        <div class="fl-plugins-grid" id="flPluginsContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Panel 3: Hotkeys Cheat-Sheet -->
+      <div class="fl-tab-panel hidden" id="flPanelHotkeys">
+        <div class="fl-filter-row" id="flHotkeyFilters">
+          <button type="button" class="filter-pill active" data-hcat="all">Барлық пернелер</button>
+          <button type="button" class="filter-pill" data-hcat="windows">Терезелер &amp; Сақтау</button>
+          <button type="button" class="filter-pill" data-hcat="pianoroll">Piano Roll</button>
+          <button type="button" class="filter-pill" data-hcat="playlist">Playlist</button>
+          <button type="button" class="filter-pill" data-hcat="mixer">Mixer &amp; Экспорт</button>
+        </div>
+        <div class="fl-hotkeys-grid" id="flHotkeysContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Panel 4: 6 Secret FL Studio Pro Tricks -->
+      <div class="fl-tab-panel hidden" id="flPanelTricks">
+        <div class="fl-tricks-grid" id="flTricksContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Complete 6-Module Curriculum -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">01 • ТОЛЫҚ ОҚУ БАҒДАРЛАМАСЫ</span>
+        <h2 class="section-title">Битмейкинг курсын басынан аяғына дейін меңгер</h2>
+        <p class="section-desc">
+          Әр сабақты ретімен оқы, мысалдарды қара, соңында «Сабақты аяқтадым» батырмасын бас. Прогресің автоматты түрде сақталады.
+        </p>
+      </div>
+
+      <!-- Overall Progress Bar -->
+      <div class="course-progress-card">
+        <div class="progress-info">
+          <div>
+            <strong id="progressStatusTitle">Оқу прогресі: 0%</strong>
+            <p id="progressStatusSubtitle">1-модуль, 1-сабақтан баста — барлығы оңай түсіндірілген.</p>
+          </div>
+          <span class="mono-counter" id="progressCounter">0 / 18</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="courseProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Module Selector Tabs -->
+      <div class="module-tabs" id="moduleTabs" role="tablist" aria-label="Курс модульдері">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Curriculum Workspace: Lessons List + Active Lesson Reader -->
+      <div class="curriculum-layout">
+        <aside class="lesson-sidebar" id="lessonSidebar" aria-label="Модуль сабақтары">
+          <!-- Rendered by JS -->
+        </aside>
+
+        <article class="lesson-reader" id="lessonReader">
+          <!-- Rendered by JS -->
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive 16-Step Drum Machine -->
+  <section class="section section-alt" id="drum-studio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">02 • ИНТЕРАКТИВТІ СТУДИЯ</span>
+        <h2 class="section-title">16-қадамды Драм-Машина (Beat Sequencer)</h2>
+        <p class="section-desc">
+          FL Studio-дағы Channel Rack дәл осылай жұмыс істейді! Дайын жанр пресетін таңдап <strong>Ойнату</strong> батырмасын бас,
+          немесе торшаларды өзің басып алғашқы битіңді дәл қазір құрастыр.
+        </p>
+      </div>
+
+      <div class="studio-rack">
+        <!-- Top Transport & Controls Bar -->
+        <div class="rack-toolbar">
+          <div class="transport-group">
+            <button class="btn-transport" id="drumPlayBtn" aria-label="Ойнату немесе тоқтату">
+              <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+              <svg class="icon-stop hidden" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>
+              <span id="drumPlayLabel">ОЙНАТУ</span>
+            </button>
+            <button class="btn-rack" id="tapTempoBtn" title="Ырғақ бойынша бірнеше рет бас">TAP TEMPO</button>
+            <button class="btn-rack" id="drumRandomBtn" title="Кездейсоқ ырғақ құру">🎲 Кездейсоқ</button>
+            <button class="btn-rack btn-rack-danger" id="drumClearBtn" title="Барлық торды тазалау">Тазалау</button>
+          </div>
+
+          <div class="knobs-group">
+            <div class="control-box">
+              <label for="bpmSlider">BPM (Темп): <strong id="bpmValue" class="mono-accent">140</strong></label>
+              <input type="range" id="bpmSlider" min="65" max="175" value="140" />
+            </div>
+            <div class="control-box">
+              <label for="swingSlider">SWING (Кач): <strong id="swingValue" class="mono-accent">0%</strong></label>
+              <input type="range" id="swingSlider" min="0" max="45" value="0" />
+            </div>
+            <div class="control-box">
+              <label for="masterVolSlider">ДЫБЫС: <strong id="masterVolValue" class="mono-accent">80%</strong></label>
+              <input type="range" id="masterVolSlider" min="0" max="100" value="80" />
+            </div>
+          </div>
+
+          <div class="scope-box" aria-hidden="true">
+            <canvas id="drumVisualizer" width="180" height="44"></canvas>
+            <span class="scope-label">MASTER OUT</span>
+          </div>
+        </div>
+
+        <!-- Preset Genre Pills -->
+        <div class="preset-bar">
+          <span class="preset-label">Жанр пресеттері:</span>
+          <div class="preset-buttons" id="drumPresets">
+            <button class="preset-btn active" data-preset="trap">🔥 Trap (140 BPM)</button>
+            <button class="preset-btn" data-preset="boombap">📼 Boom Bap (90 BPM)</button>
+            <button class="preset-btn" data-preset="drill">⚡ Drill (142 BPM)</button>
+            <button class="preset-btn" data-preset="lofi">🌙 Lo-Fi (78 BPM)</button>
+            <button class="preset-btn" data-preset="house">🪩 House (124 BPM)</button>
+          </div>
+        </div>
+
+        <!-- Beat Ruler (1..16 grouped by 4 beats) -->
+        <div class="sequencer-scroll">
+          <div class="sequencer-grid-wrapper">
+            <div class="beat-ruler">
+              <div class="ruler-spacer">АСПАП / КАНАЛ</div>
+              <div class="ruler-steps" id="stepRuler">
+                <!-- 16 step numbers rendered by JS -->
+              </div>
+            </div>
+
+            <!-- 7 Drum Rows -->
+            <div class="sequencer-rows" id="sequencerRows">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Mentor Insight Panel for Active Genre -->
+        <div class="mentor-insight" id="drumMentorInsight">
+          <!-- Updated dynamically by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Interactive Piano, Scale & Chord Lab -->
+  <section class="section" id="piano-lab">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">03 • МЕЛОДИЯ ЖӘНЕ ГАРМОНИЯ</span>
+        <h2 class="section-title">Пианино, Гамма (Scale) және Аккорд Зертханасы</h2>
+        <p class="section-desc">
+          Нота білмеймін деп уайымдама! Гамманы таңда — пернетақтада <strong>тек дұрыс ноталар жанады</strong>.
+          Солардың кез келгенін бассаң да фальш болмайды. Тінтуірмен де, компьютер пернелерімен де (<kbd>A</kbd>–<kbd>K</kbd>) ойнай аласың!
+        </p>
+      </div>
+
+      <div class="studio-rack piano-rack">
+        <div class="piano-controls-grid">
+          <div class="piano-control-group">
+            <label for="rootNoteSelect">Тональдік (Root Note)</label>
+            <select id="rootNoteSelect" class="studio-select">
+              <option value="0" selected>C (До)</option>
+              <option value="1">C# / Db</option>
+              <option value="2">D (Ре)</option>
+              <option value="3">D# / Eb</option>
+              <option value="4">E (Ми)</option>
+              <option value="5">F (Фа)</option>
+              <option value="6">F# / Gb</option>
+              <option value="7">G (Соль)</option>
+              <option value="8">G# / Ab</option>
+              <option value="9">A (Ля)</option>
+              <option value="10">A# / Bb</option>
+              <option value="11">B (Си)</option>
+            </select>
+          </div>
+
+          <div class="piano-control-group">
+            <label for="scaleSelect">Гамма түрі (Scale)</label>
+            <select id="scaleSelect" class="studio-select">
+              <option value="minor" selected>Natural Minor — Рэп / Трэп / Мұңды (#1 таңдау)</option>
+              <option value="harmonicMinor">Harmonic Minor — Қараңғы Drill / Dark Trap</option>
+              <option value="major">Major — Көңілді / Поп / Жарқын</option>
+              <option value="pentatonicMinor">Minor Pentatonic — Ең оңай мелодия (5 нота)</option>
+            </select>
+          </div>
+
+          <div class="piano-control-group">
+            <label for="synthVoiceSelect">Дыбыс (VST пресет)</label>
+            <select id="synthVoiceSelect" class="studio-select">
+              <option value="keys" selected>🎹 Warm Rhodes Keys</option>
+              <option value="bell">🔔 Dark Trap Bell</option>
+              <option value="pad">☁️ Soft Lo-Fi Pad</option>
+              <option value="pluck">⚡ Synth Pluck</option>
+            </select>
+          </div>
+
+          <div class="piano-legend">
+            <span class="legend-item"><i class="dot-root"></i> Негізгі нота (Root)</span>
+            <span class="legend-item"><i class="dot-scale"></i> Гамма нотасы</span>
+            <span class="legend-item"><i class="dot-active"></i> Ойнап тұр</span>
+          </div>
+        </div>
+
+        <!-- 2-Octave Interactive Piano -->
+        <div class="piano-stage">
+          <div class="piano-keyboard" id="pianoKeyboard" role="group" aria-label="2 октавалы интерактивті пианино">
+            <!-- Keys rendered by JS -->
+          </div>
+          <div class="piano-status-bar">
+            <span id="pianoActiveInfo">Пернені бас немесе төмендегі аккорд формуласын тексер</span>
+            <span class="kbd-hint">Пернетақта: <kbd>A</kbd><kbd>W</kbd><kbd>S</kbd><kbd>E</kbd><kbd>D</kbd><kbd>F</kbd><kbd>T</kbd><kbd>G</kbd><kbd>Y</kbd><kbd>H</kbd><kbd>U</kbd><kbd>J</kbd><kbd>K</kbd></span>
+          </div>
+        </div>
+
+        <!-- Chord Formula & Progressions Panel -->
+        <div class="chord-lab-grid">
+          <div class="chord-card">
+            <h3>3 секундтық аккорд формуласы</h3>
+            <p class="card-sub">Piano Roll-да ноталарды жарты тонмен санап қою арқылы кез келген аккорд құра аласың:</p>
+            <div class="formula-buttons" id="chordFormulaBtns">
+              <button class="formula-btn" data-chord="minor">
+                <strong>Minor (Мұңды)</strong>
+                <span class="mono-tag">0 — 3 — 7</span>
+              </button>
+              <button class="formula-btn" data-chord="major">
+                <strong>Major (Көңілді)</strong>
+                <span class="mono-tag">0 — 4 — 7</span>
+              </button>
+              <button class="formula-btn" data-chord="min7">
+                <strong>Minor 7th (Lo-Fi / R&amp;B)</strong>
+                <span class="mono-tag">0 — 3 — 7 — 10</span>
+              </button>
+              <button class="formula-btn" data-chord="sus2">
+                <strong>Sus2 (Атмосфералы)</strong>
+                <span class="mono-tag">0 — 2 — 7</span>
+              </button>
+            </div>
+            <div class="formula-explain" id="chordFormulaExplain">
+              Таңдалған Root нотадан бастап, жоғарыдағы кез келген формуланы бас — аккордтың дыбысын естисің және пернетақтада қай ноталар екенін көресің.
+            </div>
+          </div>
+
+          <div class="chord-card">
+            <h3>Дайын PRO аккорд прогрессиялары</h3>
+            <p class="card-sub">Батырманы басып, хит тректерде жиі қолданылатын 4 тактылық тізбектерді тыңда:</p>
+            <div class="progression-list" id="progressionList">
+              <button class="prog-btn" data-prog="darkTrap">
+                <div>
+                  <strong>Dark Trap / Travis стилі</strong>
+                  <span>Cm → Ab → G → Cm (қараңғы, қысымды)</span>
+                </div>
+                <span class="play-pill">▶ Тыңдау</span>
+              </button>
+              <button class="prog-btn" data-prog="melodicRap">
+                <div>
+                  <strong>Melodic Rap / Лирика</strong>
+                  <span>Am → F → C → G (эмоциялы хит)</span>
+                </div>
+                <span class="play-pill">▶ Тыңдау</span>
+              </button>
+              <button class="prog-btn" data-prog="lofiChill">
+                <div>
+                  <strong>Lo-Fi / Түнгі Вайб</strong>
+                  <span>Dm7 → Gm7 → C7 → Fmaj7 (жұмсақ джаз)</span>
+                </div>
+                <span class="play-pill">▶ Тыңдау</span>
+              </button>
+              <button class="prog-btn" data-prog="qpopModern">
+                <div>
+                  <strong>Q-Pop / Modern Hip-Hop</strong>
+                  <span>Em → C → G → D (энергиялы)</span>
+                </div>
+                <span class="play-pill">▶ Тыңдау</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Interactive Arrangement Blueprint -->
+  <section class="section section-alt" id="arrangement">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">04 • АРАНЖИРОВКА (PLAYLIST)</span>
+        <h2 class="section-title">8 тактылық луптан толық трек қалай жиналады?</h2>
+        <p class="section-desc">
+          Көп жаңадан бастаушылар тек 8 такт жасап тоқтап қалады. Төмендегі <strong>интерактивті DAW таймлайнында</strong>
+          кез келген бөлімді бас — қай жерде қандай аспап ойнап, қай жерде тыныштық керек екенін бірден түсінесің.
+        </p>
+      </div>
+
+      <div class="studio-rack arrangement-rack">
+        <div class="arrangement-toolbar">
+          <div class="arrangement-meta">
+            <span class="mono-label">PLAYLIST_ARRANGEMENT • 52 BARS (~2:30 МИН @ 140 BPM)</span>
+          </div>
+          <div class="arrangement-actions">
+            <button class="btn-rack btn-rack-accent" id="arrWalkthroughBtn">▶ Бөлімдерді ретімен көрсету</button>
+          </div>
+        </div>
+
+        <div class="timeline-scroll">
+          <div class="timeline-grid" id="arrangementTimeline">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <div class="arrangement-detail" id="arrangementDetail">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Interactive EQ & Mixing Visualizer -->
+  <section class="section" id="mixing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">05 • МИКСИНГ ЖӘНЕ МАСТЕРИНГ</span>
+        <h2 class="section-title">Интерактивті EQ &amp; Жиілік Картасы</h2>
+        <p class="section-desc">
+          Неге кәсіби биттер таза әрі қатты естіледі, ал бастаушылардікі «балшық» сияқты?
+          Құпиясы — <strong>әр аспаптың өз жиілік аумағы бар</strong>. Аспапты таңдап, оның EQ қисығы мен миксинг ережесін көр!
+        </p>
+      </div>
+
+      <div class="studio-rack eq-rack">
+        <div class="eq-instrument-tabs" id="eqInstrumentTabs">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="eq-workspace">
+          <div class="eq-graph-panel">
+            <div class="eq-graph-header">
+              <span class="mono-label" id="eqGraphTitle">PARAMETRIC EQ 2 • 808 BASS</span>
+              <span class="eq-badge" id="eqPanBadge">MONO • 0% PAN</span>
+            </div>
+            <svg class="eq-svg" id="eqSvg" viewBox="0 0 700 260" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Эквалайзер жиілік қисығы">
+              <!-- Rendered dynamically by JS -->
+            </svg>
+            <div class="freq-band-legend">
+              <span><strong>Sub</strong> 20–60Hz</span>
+              <span><strong>Bass</strong> 60–250Hz</span>
+              <span><strong>Low-Mid</strong> 250–500Hz</span>
+              <span><strong>Mid</strong> 500Hz–2kHz</span>
+              <span><strong>Presence</strong> 2–6kHz</span>
+              <span><strong>Air</strong> 6–20kHz</span>
+            </div>
+          </div>
+
+          <div class="eq-advice-panel" id="eqAdvicePanel">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Gain Staging & Mastering Quick Reference -->
+        <div class="mastering-strip">
+          <div class="master-card">
+            <span class="master-num">01</span>
+            <h4>Gain Staging (Баланс)</h4>
+            <p>Микстің 70%-ы — жай ғана дыбыс деңгейлері. Kick ең қатты (-6 dB), 808 (-8 dB), Snare (-7 dB), Мелодия (-12..-15 dB), Hi-Hat (-14 dB). Мастерде қызылға (0 dB) тигізбе!</p>
+          </div>
+          <div class="master-card">
+            <span class="master-num">02</span>
+            <h4>Sidechain &amp; Low-Cut</h4>
+            <p>Мелодия мен пэдтерден 100–150 Hz-тен төмен жиілікті кесіп таста (High-Pass Filter). Сонда 808 бас таза «ұрады» және вокалға орын ашылады.</p>
+          </div>
+          <div class="master-card">
+            <span class="master-num">03</span>
+            <h4>Мастер-канал (Export)</h4>
+            <p>Мастерге <strong>Soft Clipper</strong> (FL Studio) немесе <strong>Limiter</strong> (-0.1 dB ceiling) қой. Файлды WAV 24-bit / 44.1 kHz (сатуға) және MP3 320 kbps (тыңдатуға) түрінде сақта.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: 30-Day Roadmap, Top 10 Mistakes & Quiz -->
+  <section class="section section-alt" id="roadmap">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">06 • ТӘЖІРИБЕ ЖӘНЕ ӨСУ</span>
+        <h2 class="section-title">30 күндік PRO жоспар және Жиі кететін қателер</h2>
+        <p class="section-desc">
+          Битмейкинг — спорт сияқты. Тек теория оқу аз, күнде 30–60 минут тәжірибе керек.
+          Төмендегі 4 апталық жоспарды белгілеп отыр!
+        </p>
+      </div>
+
+      <!-- 4-Week Interactive Checklist -->
+      <div class="roadmap-grid" id="roadmapGrid">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Top 10 Beginner Mistakes -->
+      <div class="subsection-block">
+        <div class="subsection-head">
+          <h3>⚠️ Жаңадан бастаушылардың ТОП-10 қатесі (сен оларды жасама!)</h3>
+          <p>Әр продюсер осы қателерден өтеді. Қазір біліп алсаң, 6 ай уақытыңды үнемдейсің.</p>
+        </div>
+        <div class="mistakes-grid" id="mistakesGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Free Starter Pack -->
+      <div class="subsection-block" id="resources">
+        <div class="subsection-head">
+          <h3>🎁 0 теңгемен бастау: Тегін DAW және PRO деңгейлі плагиндер</h3>
+          <p>Алғашқы битің үшін ешнәрсе сатып алудың қажеті жоқ. Міне, кәсібилер де қолданатын тегін құралдар:</p>
+        </div>
+        <div class="resources-grid" id="resourcesGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Interactive Self-Test Quiz -->
+      <div class="subsection-block" id="quiz">
+        <div class="quiz-box">
+          <div class="quiz-header">
+            <div>
+              <span class="section-kicker">БІЛІМДІ ТЕКСЕРУ</span>
+              <h3>Битмейкер мини-тесті (10 сұрақ)</h3>
+            </div>
+            <div class="quiz-score-badge" id="quizScoreBadge">Ұпай: 0 / 10</div>
+          </div>
+          <div id="quizContainer">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Searchable Producer Glossary -->
+  <section class="section" id="glossary">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">07 • ПРОДЮСЕР СӨЗДІГІ</span>
+        <h2 class="section-title">Битмейкерлердің барлық терминдері бір жерде</h2>
+        <p class="section-desc">
+          YouTube-та немесе DAW ішінде түсініксіз ағылшынша сөз кездессе, осы жерден 1 секундта іздеп тап.
+        </p>
+      </div>
+
+      <div class="glossary-controls">
+        <div class="search-input-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="glossarySearch" placeholder="Терминді іздеу... мысалы: 808, Sidechain, BPM, Quantize, Stem" />
+        </div>
+        <div class="glossary-filters" id="glossaryFilters">
+          <button class="filter-pill active" data-cat="all">Барлығы</button>
+          <button class="filter-pill" data-cat="basics">Негіздер</button>
+          <button class="filter-pill" data-cat="rhythm">Ырғақ &amp; Драм</button>
+          <button class="filter-pill" data-cat="melody">Мелодия</button>
+          <button class="filter-pill" data-cat="mixing">Миксинг</button>
+          <button class="filter-pill" data-cat="business">Бизнес</button>
+        </div>
+      </div>
+
+      <div class="glossary-grid" id="glossaryGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand">
+          <span class="brand-eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span class="brand-text">BEATLAB<span class="brand-accent">.KZ</span></span>
+        </div>
+        <p class="footer-note">
+          0-ден PRO битмейкерге дейінгі қазақша интерактивті академия. Күн сайын 1 бит — 1 жылда мүлде басқа деңгей!
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#fl-studio">FL Studio</a>
+        <a href="#curriculum">Курс</a>
+        <a href="#drum-studio">Драм-машина</a>
+        <a href="#piano-lab">Пианино</a>
+        <a href="#arrangement">Аранжировка</a>
+        <a href="#mixing">Миксинг</a>
+        <a href="#glossary">Сөздік</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script defer src="js/bundle.js"></script>
+</body>
+</html>
