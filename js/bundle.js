@@ -3201,7 +3201,7 @@ const FL_VISUALS = [
     subtitle: 'Бұл 2 терезені дұрыс баптасаң — 808 басың ешқашан фальш бермейді және «балшық» болмайды!',
     pins: [
       {
-        num: 1, x: 18, y: 17,
+        num: 1, x: 20, y: 12,
         title: 'Sampler ішіндегі 2-қойынды (Envelope / Instrument)',
         desc: 'Channel Rack-та 808-ді бас → ашылған терезеде <strong>Envelope</strong> белгішесін таңда да, Volume шамын жақ!'
       },
