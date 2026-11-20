@@ -2259,6 +2259,289 @@ input[type="range"]::-webkit-slider-thumb {
   gap: 10px;
   margin-bottom: 22px;
 }
+.fl-tabs-bar.fl-tabs-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Interactive FL Studio Annotated Screenshots Gallery */
+.fl-visual-shell {
+  background: var(--bg-1);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fl-visual-thumbs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.fl-vthumb {
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+.fl-vthumb:hover { color: var(--text-1); border-color: var(--border-strong); }
+.fl-vthumb.active {
+  background: rgba(255, 140, 36, 0.18);
+  border-color: var(--amber);
+  color: #ffd09a;
+  box-shadow: 0 4px 16px rgba(255, 140, 36, 0.18);
+}
+
+.fl-visual-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+.fl-visual-bar h3 {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+.fl-visual-bar p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-2);
+}
+
+.fl-visual-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.fl-visual-nav button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.fl-visual-stage {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #14191f;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.fl-svg-screen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fl-hotspots-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.fl-hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2.5px solid #fff;
+  background: var(--amber);
+  color: #090a0f;
+  font-family: var(--font-mono);
+  font-weight: 900;
+  font-size: 0.84rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 0 0 5px rgba(255, 140, 36, 0.32), 0 4px 12px rgba(0, 0, 0, 0.65);
+  transition: transform 0.16s, background 0.16s, box-shadow 0.16s;
+  z-index: 4;
+}
+.fl-hotspot:hover {
+  transform: translate(-50%, -50%) scale(1.16);
+}
+.fl-hotspot.active {
+  background: var(--emerald);
+  color: #04130d;
+  transform: translate(-50%, -50%) scale(1.22);
+  box-shadow: 0 0 0 7px rgba(0, 229, 160, 0.36), 0 6px 18px rgba(0, 0, 0, 0.75);
+  z-index: 6;
+}
+
+.fl-visual-pin-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fl-pin-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fl-pin-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.fl-pin-pill:hover { color: var(--text-1); border-color: var(--border-strong); }
+.fl-pin-pill.active {
+  background: rgba(0, 229, 160, 0.14);
+  border-color: var(--emerald);
+  color: #a8ffe1;
+}
+
+.pin-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--amber);
+  color: #090a0f;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: inline-grid;
+  place-items: center;
+}
+.fl-pin-pill.active .pin-circle { background: var(--emerald); }
+
+.fl-pin-detail-box {
+  background: var(--bg-2);
+  border: 1px solid rgba(0, 229, 160, 0.3);
+  border-radius: 14px;
+  padding: 16px 18px;
+}
+.fl-pin-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.pin-circle-lg {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--emerald);
+  color: #06130e;
+  font-family: var(--font-mono);
+  font-weight: 900;
+  font-size: 0.85rem;
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.fl-pin-detail-head h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-1);
+}
+.fl-pin-detail-box p {
+  margin: 0;
+  font-size: 0.91rem;
+  color: var(--text-2);
+}
+.fl-pin-detail-box p strong { color: var(--text-1); }
+.fl-pin-detail-box code {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  background: var(--bg-3);
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: #ffc88a;
+}
+
+.fl-step-footer {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.fl-step-footer .fl-step-key {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.fl-see-pic-btn {
+  padding: 6px 11px;
+  border-radius: 8px;
+  background: rgba(255, 140, 36, 0.14);
+  border: 1px solid rgba(255, 140, 36, 0.35);
+  color: #ffc480;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.fl-see-pic-btn:hover {
+  background: var(--amber);
+  color: #090a0f;
+}
+
+/* Fullscreen Lightbox Modal */
+.fl-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(5, 6, 10, 0.88);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.fl-lightbox-dialog {
+  width: 100%;
+  max-width: 1120px;
+  background: var(--bg-1);
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.75);
+}
+.fl-lightbox-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.fl-lightbox-body {
+  max-height: 80vh;
+  overflow: auto;
+  border-radius: 12px;
+}
 
 .fl-tab-btn {
   display: flex;
@@ -2504,7 +2787,8 @@ input[type="range"]::-webkit-slider-thumb {
    ========================================================= */
 @media (max-width: 1080px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .fl-tabs-bar { grid-template-columns: repeat(2, 1fr); }
+  .fl-tabs-bar, .fl-tabs-bar.fl-tabs-5 { grid-template-columns: repeat(3, 1fr); }
+  .fl-visual-thumbs { grid-template-columns: repeat(3, 1fr); }
   .fl-plugins-grid { grid-template-columns: repeat(2, 1fr); }
   .module-tabs { grid-template-columns: repeat(3, 1fr); }
   .curriculum-layout { grid-template-columns: 1fr; }
@@ -2524,6 +2808,9 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .stat-divider { display: none; }
 
+  .fl-tabs-bar, .fl-tabs-bar.fl-tabs-5 { grid-template-columns: repeat(2, 1fr); }
+  .fl-visual-thumbs { grid-template-columns: repeat(2, 1fr); }
+  .fl-hotspot { width: 24px; height: 24px; font-size: 0.72rem; border-width: 2px; }
   .fl-steps-grid { grid-template-columns: 1fr; }
   .fl-plugins-grid { grid-template-columns: 1fr; }
   .fl-hotkeys-grid { grid-template-columns: 1fr; }

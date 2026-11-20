@@ -13,6 +13,7 @@ import {
 import { initDrumMachine } from './drum-machine.js';
 import { initPianoLab } from './piano-lab.js';
 import { initArrangement, initEqVisualizer } from './arrangement-eq.js';
+import { initFlVisuals } from './fl-visuals.js';
 import { initFlStudioGuide } from './fl-studio-guide.js';
 
 const STORAGE_LESSONS = 'beatlab_completed_lessons_v1';
@@ -51,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const pianoApi = initPianoLab();
   initArrangement();
   const eqApi = initEqVisualizer();
-  initFlStudioGuide();
+  const flVisualsApi = initFlVisuals();
+  initFlStudioGuide(flVisualsApi);
 
   // Mobile menu toggle
   const mobileBtn = document.getElementById('mobileMenuBtn');

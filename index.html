@@ -172,25 +172,57 @@
         </div>
       </div>
 
-      <!-- 4 FL Studio Sub-Tabs -->
-      <div class="fl-tabs-bar" id="flGuideTabs" role="tablist">
-        <button type="button" class="fl-tab-btn active" data-fl-tab="flPanelSteps">
+      <!-- 5 FL Studio Sub-Tabs -->
+      <div class="fl-tabs-bar fl-tabs-5" id="flGuideTabs" role="tablist">
+        <button type="button" class="fl-tab-btn active" data-fl-tab="flPanelVisuals">
+          <span>📸 Суреттермен (6 терезе)</span>
+        </button>
+        <button type="button" class="fl-tab-btn" data-fl-tab="flPanelSteps">
           <span>🚀 10 қадамдық Cook-Up</span>
-          <span class="fl-tab-pill" id="flStepsProgress">0 / 10 қадам</span>
+          <span class="fl-tab-pill" id="flStepsProgress">0 / 10</span>
         </button>
         <button type="button" class="fl-tab-btn" data-fl-tab="flPanelPlugins">
-          <span>🎛️ Stock Плагиндер (Тегін)</span>
+          <span>🎛️ Stock Плагиндер</span>
         </button>
         <button type="button" class="fl-tab-btn" data-fl-tab="flPanelHotkeys">
-          <span>⌨️ Жылдам Пернелер (28)</span>
+          <span>⌨️ Пернелер (28)</span>
         </button>
         <button type="button" class="fl-tab-btn" data-fl-tab="flPanelTricks">
-          <span>⚡ 6 PRO Құпия Трюк</span>
+          <span>⚡ 6 PRO Трюк</span>
         </button>
       </div>
 
+      <!-- Panel 0: Interactive Annotated FL Studio Screenshots -->
+      <div class="fl-tab-panel" id="flPanelVisuals">
+        <div class="fl-visual-shell">
+          <div class="fl-visual-thumbs" id="flVisualThumbs" role="tablist" aria-label="FL Studio терезелері">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="fl-visual-bar">
+            <div>
+              <h3 id="flVisualTitle">FL Studio Басты Терезесі</h3>
+              <p id="flVisualSub">Суреттегі сары нөмірлерді (1–5) басып, әр батырманың не істейтінін оқы!</p>
+            </div>
+            <div class="fl-visual-nav">
+              <button type="button" class="btn-rack" id="flVisualPrev">← Алдыңғы</button>
+              <button type="button" class="btn-rack" id="flVisualNext">Келесі →</button>
+              <button type="button" class="btn-rack btn-rack-accent" id="flVisualZoom">🔍 Үлкейту</button>
+            </div>
+          </div>
+
+          <div class="fl-visual-stage" id="flVisualStage">
+            <!-- SVG + interactive numbered pins rendered by JS -->
+          </div>
+
+          <div class="fl-visual-pin-info" id="flVisualPinInfo">
+            <!-- Selected pin explanation rendered by JS -->
+          </div>
+        </div>
+      </div>
+
       <!-- Panel 1: 10-Step Cook-Up Checklist -->
-      <div class="fl-tab-panel" id="flPanelSteps">
+      <div class="fl-tab-panel hidden" id="flPanelSteps">
         <div class="fl-steps-grid" id="flStepsContainer">
           <!-- Rendered by JS -->
         </div>
@@ -708,6 +740,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- FL Studio Screenshot Zoom Lightbox -->
+  <div class="fl-lightbox hidden" id="flLightboxModal" role="dialog" aria-modal="true" aria-labelledby="flLightboxTitle">
+    <div class="fl-lightbox-dialog">
+      <div class="fl-lightbox-head">
+        <strong id="flLightboxTitle">FL Studio Терезесі</strong>
+        <button type="button" class="btn-rack btn-rack-danger" id="flLightboxClose">✕ Жабу</button>
+      </div>
+      <div class="fl-lightbox-body" id="flLightboxBody"></div>
+    </div>
+  </div>
 
   <!-- Toast notification -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

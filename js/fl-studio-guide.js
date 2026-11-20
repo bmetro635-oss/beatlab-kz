@@ -10,6 +10,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl1',
     step: '01',
+    visualId: 'overview',
     title: 'Жобаны баптау және BPM қою',
     where: 'Top Toolbar • Options → Audio Settings',
     desc: 'FL Studio ашылғанда ең алдымен темпті қой (мысалы, Trap үшін <strong>140 BPM</strong>, Boom Bap үшін <strong>90 BPM</strong>, Drill үшін <strong>142 BPM</strong>). Дыбыс қатпауы үшін Audio Settings ішінде Buffer Length-ті <code>256–512 smp</code> шамасында ұста.',
@@ -19,6 +20,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl2',
     step: '02',
+    visualId: 'overview',
     title: 'Drum Kit папкаңды Browser-ге қосу',
     where: 'Options → File Settings → Browser extra search folders',
     desc: 'Жүктелген драм-кит папкаңды осында қоссаң, сол жақтағы Browser-де мәңгі тұрады. Дыбыстарды іздемей-ақ бірден Channel Rack-қа сүйреп саласың.',
@@ -28,6 +30,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl3',
     step: '03',
+    visualId: 'piano-roll',
     title: 'Мелодия жазу және Scale Highlighting қосу',
     where: 'Channel Rack (+) → FLEX → Piano Roll (F7)',
     desc: 'Аспап ретінде встроенный <strong>FLEX</strong> (немесе FL Keys) қос. Piano Roll-да жоғарғы сол жақ үшбұрыштан <strong>View → Scale Highlighting → C + Minor Natural</strong> таңда. Ақшыл жолақтармен 4 аккорд және қарапайым әуен сал!',
@@ -37,6 +40,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl4',
     step: '04',
+    visualId: 'channel-rack',
     title: 'Драм-партияны 2 минутта жинау',
     where: 'Channel Rack (F6)',
     desc: '<strong>Clap</strong>-ты 9-қадамға қой. <strong>Hi-Hat</strong> үстінен оң жақ батырма → <code>Fill each 2 steps</code> бас! Сосын <strong>Kick</strong>, <strong>Open Hat</strong> және <strong>Perc</strong> қос. Piano Roll-да хэттерге ролл жасау үшін нотаны таңдап Chopper қолдан.',
@@ -46,6 +50,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl5',
     step: '05',
+    visualId: '808-setup',
     title: '808 Бас: Cut Itself + Envelope + Тюнинг',
     where: '808 Sampler → Envelope терезесі & Wrench',
     desc: '808 үстінен оң жақ батырма → <strong>Cut Itself</strong>! Одан соң 808 терезесінде <strong>Envelope</strong> (2-қойынды) ашып, <code>Attack 0</code>, <code>Hold 100%</code>, қалған бәрін <code>0%</code> қыл — сонда нота біткен сәтте 808 дәл тоқтайды! Нотасын тексеру үшін <strong>Edison → Detect Pitch Regions</strong> қолдан.',
@@ -55,6 +60,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl6',
     step: '06',
+    visualId: 'channel-rack',
     title: 'Барлық дыбысты 1 секундта Mixer-ге жіберу',
     where: 'Channel Rack (F6) → Mixer (F9)',
     desc: 'Channel Rack-та әр аспаптың оң жағындағы кішкентай жасыл тіктөртбұрышты екi рет басып бәрін таңда. Сосын Mixer (<code>F9</code>) ашып, <strong>Insert 1</strong> үстінде тұрып төмендегі пернені бас — барлық аспап атымен және түсімен бөлек каналдарға автоматты таралады!',
@@ -64,6 +70,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl7',
     step: '07',
+    visualId: 'playlist',
     title: 'Паттернді бөлек жолдарға бөлу (Split by channel)',
     where: 'Pattern Picker (сол жақ жоғарғы панель)',
     desc: 'Егер бәрін <code>Pattern 1</code> ішіне жазсаң, аранжировка үшін оның атынан оң жақ батырма басып <strong>Split by channel</strong> таңда. Әр аспап (Melody, Kick, 808, Hi-Hat) жеке паттернге бөлінеді!',
@@ -73,6 +80,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl8',
     step: '08',
+    visualId: 'playlist',
     title: 'Playlist-те толық трек құрастыру (Аранжировка)',
     where: 'Playlist (F5)',
     desc: 'Бөлінген паттерндерді Playlist-ке тіз де, 2.5 минутқа көшір. Содан соң Intro-дан драмдарды өшір, Verse-тен артық мелодияны ал, Drop алдында 1–2 соққылық пауза (Slice құралы <code>C</code>) және Riser қос!',
@@ -82,6 +90,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl9',
     step: '09',
+    visualId: 'mixer',
     title: 'Жылдам PRO Миксинг және Master Soft Clipper',
     where: 'Mixer (F9) • Master Channel',
     desc: '1) Деңгейлерді ретте (Kick -6dB, 808 -8dB, Melody -13dB). 2) Мелодияға <strong>Fruity Parametric EQ 2</strong> іліп 120Hz-тен төменін кес. 3) <strong>Master</strong> каналдан әдепкі Fruity Limiter-ді алып, орнына <strong>Fruity Soft Clipper</strong> қой — Trap битің бірден қатты әрі таза ұрады!',
@@ -91,6 +100,7 @@ const FL_COOKUP_STEPS = [
   {
     id: 'fl10',
     step: '10',
+    visualId: 'mixer',
     title: 'Сапалы Экспорт (WAV + MP3)',
     where: 'File → Export → Wave / MP3',
     desc: 'Экспорт терезесінде <strong>Mode: Full song</strong>, <strong>Tail: Leave remainder</strong> (немесе Cut remainder), WAV үшін <strong>24-bit int</strong>, MP3 үшін <strong>320 kbps</strong> және <strong>HQ for all plugins</strong> белгіле де <strong>Start</strong> бас. Алғашқы битің дайын!',
@@ -253,7 +263,7 @@ const FL_PRO_TRICKS = [
   }
 ];
 
-export function initFlStudioGuide() {
+export function initFlStudioGuide(visualsApi = null) {
   const osBtns = document.querySelectorAll('#flOsToggle .os-btn');
   const tabBtns = document.querySelectorAll('#flGuideTabs .fl-tab-btn');
   const panels = document.querySelectorAll('.fl-tab-panel');
@@ -265,6 +275,11 @@ export function initFlStudioGuide() {
   const hotkeyFilterBtns = document.querySelectorAll('#flHotkeyFilters .filter-pill');
   const tricksContainer = document.getElementById('flTricksContainer');
   const stepsProgressEl = document.getElementById('flStepsProgress');
+
+  function activateFlTab(targetId) {
+    tabBtns.forEach((b) => b.classList.toggle('active', b.dataset.flTab === targetId));
+    panels.forEach((p) => p.classList.toggle('hidden', p.id !== targetId));
+  }
 
   // Detect macOS automatically, default to Mac for macOS users
   let currentOs = /Mac|iPhone|iPad/i.test(navigator.platform || navigator.userAgent) ? 'mac' : 'win';
@@ -293,7 +308,7 @@ export function initFlStudioGuide() {
   function renderSteps() {
     const doneCount = completedSteps.size;
     if (stepsProgressEl) {
-      stepsProgressEl.textContent = `${doneCount} / ${FL_COOKUP_STEPS.length} қадам`;
+      stepsProgressEl.textContent = `${doneCount} / ${FL_COOKUP_STEPS.length}`;
     }
 
     stepsContainer.innerHTML = FL_COOKUP_STEPS.map((s) => {
@@ -310,7 +325,10 @@ export function initFlStudioGuide() {
           </div>
           <h4>${s.title}</h4>
           <p>${s.desc}</p>
-          <div class="fl-step-key">⌨️ <span>${keyTxt}</span></div>
+          <div class="fl-step-footer">
+            <div class="fl-step-key">⌨️ <span>${keyTxt}</span></div>
+            <button type="button" class="fl-see-pic-btn" data-open-visual="${s.visualId}">📸 Суретін көру →</button>
+          </div>
         </div>
       `;
     }).join('');
@@ -322,6 +340,14 @@ export function initFlStudioGuide() {
         else completedSteps.delete(id);
         saveSteps();
         renderSteps();
+      });
+    });
+
+    stepsContainer.querySelectorAll('[data-open-visual]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (visualsApi) visualsApi.openVisualById(btn.dataset.openVisual);
+        activateFlTab('flPanelVisuals');
+        document.getElementById('fl-studio').scrollIntoView({ behavior: 'smooth' });
       });
     });
   }
@@ -379,9 +405,7 @@ export function initFlStudioGuide() {
   // Tab switching
   tabBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-      const targetId = btn.dataset.flTab;
-      tabBtns.forEach((b) => b.classList.toggle('active', b === btn));
-      panels.forEach((p) => p.classList.toggle('hidden', p.id !== targetId));
+      activateFlTab(btn.dataset.flTab);
     });
   });
 
